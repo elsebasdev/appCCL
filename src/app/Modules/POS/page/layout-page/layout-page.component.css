@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+}
+
+:host #content-wrapper {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden
+}
+
+:host #content-wrapper #content {
+    flex: 1 0 auto
+}

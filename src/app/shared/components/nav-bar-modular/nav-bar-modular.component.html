@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand navbar-light  bg-gray-100 border-bottom-dark rounded-lg topbar static-top shadow">
+
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav">
+
+        <!-- Nav Item - Alerts -->
+        <li *ngFor="let item of menuItems" class="nav-item dropdown no-arrow mx-1" >
+            <a [routerLink]="item.route" routerLinkActive="active" class="nav-link dropdown-toggle" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i [class]="item.logo"></i>
+                <!-- Counter - Alerts -->
+                <span class="mr-2 d-none d-lg-inline text-black-50 small">{{item.name}}</span>
+            </a>
+        </li>
+    </ul>
+
+</nav>
